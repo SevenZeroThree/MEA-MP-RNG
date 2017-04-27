@@ -1,11 +1,20 @@
+var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  entry: './scripts/app.js',
+  entry: {
+    bundle: './scripts/app.js',
+    vendor: ['react', 'react-dom']
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+        names: ['vendor', 'manifest'] // Specify the common bundle's name.
+    })
+  ],
   module: {
     rules: [
       {
