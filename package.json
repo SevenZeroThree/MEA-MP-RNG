@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/sevenzerothree/MEA-MP-RNG/issues"
   },
-  "homepage": "https://github.com/sevenzerothree/MEA-MP-RNG#readme"
+  "homepage": "https://github.com/sevenzerothree/MEA-MP-RNG#readme",
+  "devDependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "redux": "^3.6.0",
+    "webpack": "^2.4.1"
+  }
 }
