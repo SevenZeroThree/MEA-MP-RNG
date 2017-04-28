@@ -1,7 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+import Test from './components/test';
+
 render(
-    <h1>Hello</h1>,
+    <Test />,
     document.getElementById('container')
 );
