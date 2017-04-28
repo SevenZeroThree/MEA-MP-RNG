@@ -1575,14 +1575,22 @@ module.exports = function (module) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _actions = __webpack_require__(227);
+
 var randomClasses = function randomClasses() {
     var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
     var action = arguments[1];
 
     switch (action.type) {
-        case 'GET_CLASS':
+        case _actions.GET_RANDOM_CLASS:
             return Object.assign({}, state, {
                 isProcessing: true
+            });
+        case _actions.RECEIVE_RANDOM_CLASS:
+            return Object.assign({}, state, {
+                isProcessing: false,
+                randomClasses: action.randomClasses
             });
         default:
             return state;
@@ -1590,6 +1598,47 @@ var randomClasses = function randomClasses() {
 };
 
 exports.default = randomClasses;
+
+/***/ }),
+
+/***/ 227:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.getRandomClass = getRandomClass;
+exports.receiveRandomClass = receiveRandomClass;
+exports.fetchRandomClass = fetchRandomClass;
+var GET_RANDOM_CLASS = exports.GET_RANDOM_CLASS = 'GET_RANDOM_CLASS';
+var RECEIVE_RANDOM_CLASS = exports.RECEIVE_RANDOM_CLASS = 'RECEIVE_RANDOM_CLASS';
+
+function getRandomClass() {
+    return {
+        type: GET_RANDOM_CLASS
+    };
+}
+
+function receiveRandomClass(randomClass) {
+    return {
+        type: RECEIVE_RANDOM_CLASS,
+        randomClass: randomClass
+    };
+}
+
+function fetchRandomClass() {
+    return function (dispatch) {
+        dispatch(getRandomClass());
+
+        return dispatch(receiveRandomClass({
+            character: 'Human Male Vanguard',
+            weapon: 'Viper'
+        }));
+    };
+}
 
 /***/ }),
 
