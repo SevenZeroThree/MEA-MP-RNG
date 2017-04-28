@@ -3,7 +3,7 @@ import {
     RECEIVE_RANDOM_CLASS 
 } from '../actions';
 
-const randomClasses = (state = [], action) => {
+const randomClasses = (state = { isProcessing: true, randomClass: {} }, action) => {
     switch (action.type) {
         case GET_RANDOM_CLASS:
             return Object.assign({}, state, {
@@ -12,7 +12,7 @@ const randomClasses = (state = [], action) => {
         case RECEIVE_RANDOM_CLASS:
             return Object.assign({}, state, {
                 isProcessing: false,
-                randomClasses: action.randomClasses
+                randomClass: action.randomClass
             })
         default:
             return state;
