@@ -12,11 +12,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(26);
+var _react = __webpack_require__(25);
 
 var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(25);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41,13 +39,13 @@ var Test = function (_Component) {
             return _react2.default.createElement(
                 'h1',
                 null,
-                'Test'
+                'Hello'
             );
         }
     }]);
 
     return Test;
-}(Component);
+}(_react.Component);
 
 exports.default = Test;
 
@@ -59,11 +57,11 @@ exports.default = Test;
 "use strict";
 
 
-var _react = __webpack_require__(26);
+var _react = __webpack_require__(25);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(25);
+var _reactDom = __webpack_require__(33);
 
 var _test = __webpack_require__(82);
 

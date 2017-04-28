@@ -3,7 +3,7 @@ var path = require('path');
 
 module.exports = {
   entry: {
-    bundle: './scripts/app.js',
+    bundle: './app.js',
     vendor: ['react', 'react-dom']
   },
   output: {
@@ -19,9 +19,6 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?/,
-        include: [
-          path.resolve(__dirname, "scripts")
-        ],
         loader: 'babel-loader'
       }
     ]
