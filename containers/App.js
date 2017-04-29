@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+
 import { fetchRandomClass } from '../actions'
+import ReRollButton from '../components/ReRollButton';
 
 class App extends Component {
 
@@ -17,13 +19,15 @@ class App extends Component {
     handleRollClick(e) {
         e.preventDefault();
 
-        const dispatch = this.props.dispatch;
-        dispatch(fetchRandomClass());
+        alert('hi');
+        // const dispatch = this.props.dispatch;
+        // dispatch(fetchRandomClass());
     }
 
     render() {
         return (
             <div>
+                <ReRollButton onClick={this.handleRollClick} />
                 { this.props.isProcessing &&
                     <h3>Processing</h3>
                 }
