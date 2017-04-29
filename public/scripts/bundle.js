@@ -22215,9 +22215,17 @@ exports.connect = _connect2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.RECEIVE_RANDOM_CLASS = exports.GET_RANDOM_CLASS = undefined;
 exports.getRandomClass = getRandomClass;
 exports.receiveRandomClass = receiveRandomClass;
 exports.fetchRandomClass = fetchRandomClass;
+
+var _data = __webpack_require__(236);
+
+var _data2 = _interopRequireDefault(_data);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var GET_RANDOM_CLASS = exports.GET_RANDOM_CLASS = 'GET_RANDOM_CLASS';
 var RECEIVE_RANDOM_CLASS = exports.RECEIVE_RANDOM_CLASS = 'RECEIVE_RANDOM_CLASS';
 
@@ -22238,9 +22246,18 @@ function fetchRandomClass() {
     return function (dispatch) {
         dispatch(getRandomClass());
 
+        var characters = _data2.default.characters;
+        var weapons = _data2.default.weapons;
+
+        var numberOfCharacters = characters.length >>> 0;
+        var randomCharacter = characters[Math.floor(Math.random() * numberOfCharacters)];
+
+        var numberOfWeapons = weapons.length >>> 0;
+        var randomWeapon = weapons[Math.floor(Math.random() * numberOfWeapons)];
+
         return dispatch(receiveRandomClass({
-            character: 'Human Male Vanguard',
-            weapon: 'Viper'
+            character: randomCharacter,
+            weapon: randomWeapon
         }));
     };
 }
@@ -23224,9 +23241,8 @@ var App = function (_Component) {
         value: function handleRollClick(e) {
             e.preventDefault();
 
-            alert('hi');
-            // const dispatch = this.props.dispatch;
-            // dispatch(fetchRandomClass());
+            var dispatch = this.props.dispatch;
+            dispatch((0, _actions.fetchRandomClass)());
         }
     }, {
         key: 'render',
@@ -25182,6 +25198,25 @@ exports.default = randomClasses;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 234 */,
+/* 235 */,
+/* 236 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var data = {
+    characters: ['Human Male Soldier', 'Human Male Vanguard', 'Human Male Engineer', 'Human Male Sentinel', 'Human Male Adept', 'Human Male Infiltrator', 'Human Female Soldier', 'Human Female Vanguard', 'Human Female Engineer', 'Human Female Sentinel', 'Human Female Adept', 'Human Female Infiltrator'],
+    weapons: ['Viper', 'Avenger', 'Charger', 'Predator', 'Katana']
+};
+
+exports.default = data;
 
 /***/ })
 /******/ ]);

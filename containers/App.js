@@ -24,9 +24,8 @@ class App extends Component {
     handleRollClick(e) {
         e.preventDefault();
 
-        alert('hi');
-        // const dispatch = this.props.dispatch;
-        // dispatch(fetchRandomClass());
+        const dispatch = this.props.dispatch;
+        dispatch(fetchRandomClass());
     }
 
     render() {
