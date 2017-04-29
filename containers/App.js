@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 import { fetchRandomClass } from '../actions'
+import RandomClass from '../components/RandomClass';
 import ReRollButton from '../components/ReRollButton';
 
 class App extends Component {
@@ -25,19 +26,16 @@ class App extends Component {
     }
 
     render() {
+        const { isProcessing, randomClass } = this.props
         return (
             <div>
                 <ReRollButton onClick={this.handleRollClick} />
-                { this.props.isProcessing &&
+                { isProcessing &&
                     <h3>Processing</h3>
                 }
                 <h1>Generated Class</h1>
-                {
-                    this.props.randomClass !== undefined &&
-                        <div>
-                            <h2>{this.props.randomClass.character}</h2>
-                            <h2>{this.props.randomClass.weapon}</h2>
-                        </div>
+                { randomClass &&
+                    <RandomClass randomClass={randomClass} />
                 }
             </div>
         )

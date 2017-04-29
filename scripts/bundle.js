@@ -1700,6 +1700,48 @@ exports.default = ReRollButton;
 
 /***/ }),
 
+/***/ 230:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(17);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var RandomClass = function RandomClass(_ref) {
+    var randomClass = _ref.randomClass;
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            'h2',
+            null,
+            randomClass.character
+        ),
+        _react2.default.createElement(
+            'h2',
+            null,
+            randomClass.weapon
+        )
+    );
+};
+
+RandomClass.propTypes = {
+    randomClass: _react.PropTypes.object.isRequired
+};
+
+exports.default = RandomClass;
+
+/***/ }),
+
 /***/ 33:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2885,6 +2927,10 @@ var _reactRedux = __webpack_require__(55);
 
 var _actions = __webpack_require__(56);
 
+var _RandomClass = __webpack_require__(230);
+
+var _RandomClass2 = _interopRequireDefault(_RandomClass);
+
 var _ReRollButton = __webpack_require__(229);
 
 var _ReRollButton2 = _interopRequireDefault(_ReRollButton);
@@ -2927,11 +2973,15 @@ var App = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
+            var _props = this.props,
+                isProcessing = _props.isProcessing,
+                randomClass = _props.randomClass;
+
             return _react2.default.createElement(
                 'div',
                 null,
                 _react2.default.createElement(_ReRollButton2.default, { onClick: this.handleRollClick }),
-                this.props.isProcessing && _react2.default.createElement(
+                isProcessing && _react2.default.createElement(
                     'h3',
                     null,
                     'Processing'
@@ -2941,20 +2991,7 @@ var App = function (_Component) {
                     null,
                     'Generated Class'
                 ),
-                this.props.randomClass !== undefined && _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'h2',
-                        null,
-                        this.props.randomClass.character
-                    ),
-                    _react2.default.createElement(
-                        'h2',
-                        null,
-                        this.props.randomClass.weapon
-                    )
-                )
+                randomClass && _react2.default.createElement(_RandomClass2.default, { randomClass: randomClass })
             );
         }
     }]);
