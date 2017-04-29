@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -7,8 +8,8 @@ module.exports = {
     vendor: ['react', 'react-dom']
   },
   output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'scripts')
+    filename: 'scripts/[name].js',
+    path: path.resolve(__dirname, 'public')
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
@@ -20,7 +21,22 @@ module.exports = {
       {
         test: /\.jsx?/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
       }
     ]
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin({
+      filename:  (getPath) => {
+        return getPath('css/styles.css');
+      },
+      allChunks: true
+    })
+  ]
 };

@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
+import '../content/sass/test.scss';
+
 import { fetchRandomClass } from '../actions'
 import RandomClass from '../components/RandomClass';
 import ReRollButton from '../components/ReRollButton';
@@ -28,7 +30,7 @@ class App extends Component {
     render() {
         const { isProcessing, randomClass } = this.props
         return (
-            <div>
+            <div className="test">
                 <ReRollButton onClick={this.handleRollClick} />
                 { isProcessing &&
                     <h3>Processing</h3>
