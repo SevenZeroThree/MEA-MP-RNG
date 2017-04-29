@@ -23358,6 +23358,8 @@ var _SocialLinks = __webpack_require__(237);
 
 var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
 
+__webpack_require__(241);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Footer = function Footer() {
@@ -25224,6 +25226,8 @@ var _Github = __webpack_require__(239);
 
 var _Github2 = _interopRequireDefault(_Github);
 
+__webpack_require__(240);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SocialLinks = function SocialLinks() {
@@ -25255,11 +25259,7 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Twitter = function Twitter() {
-    return _react2.default.createElement(
-        "a",
-        { href: "https://twitter.com/sevenzer0three", target: "_blank" },
-        "Twitter"
-    );
+    return _react2.default.createElement("a", { className: "twitter fa fa-twitter fa-3x", href: "https://twitter.com/sevenzer0three", target: "_blank" });
 };
 
 exports.default = Twitter;
@@ -25282,14 +25282,22 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Github = function Github() {
-    return _react2.default.createElement(
-        "a",
-        { href: "https://github.com/sevenzerothree", target: "_blank" },
-        "github.com/sevenzerothree"
-    );
+    return _react2.default.createElement("a", { className: "github fa fa-github fa-3x", href: "https://github.com/sevenzerothree", target: "_blank" });
 };
 
 exports.default = Github;
+
+/***/ }),
+/* 240 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 241 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

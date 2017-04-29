@@ -1,0 +1,11 @@
+.social a {
+  margin-right: 10px; }
+
+.social .github {
+  color: black; }
+
+.social .twitter:hover,
+.social .github:hover {
+  text-decoration: none; }
+footer {
+  text-align: center; }
