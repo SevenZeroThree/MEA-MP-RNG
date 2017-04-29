@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import '../content/sass/test.scss';
+import '../content/sass/app.scss';
 
 import { fetchRandomClass } from '../actions'
 import RandomClass from '../components/RandomClass';
