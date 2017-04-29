@@ -2,8 +2,22 @@ import React, { PropTypes } from 'react';
 
 const RandomClass = ({ randomClass }) => (
     <div>
-        <h2>{randomClass.character}</h2>
-        <h2>{randomClass.weapon}</h2>
+        <div className="row">
+            <div className="col-xs-12 col-md-6">
+                <div className="panel panel-default">
+                    <div className="panel-body">
+                        {randomClass.character}
+                    </div>
+                </div>
+            </div>
+            <div className="col-xs-12 col-md-6">
+                <div className="panel panel-default">
+                    <div className="panel-body">
+                        {randomClass.weapon}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 )
 

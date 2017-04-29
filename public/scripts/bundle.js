@@ -23237,7 +23237,7 @@ var App = function (_Component) {
 
             return _react2.default.createElement(
                 'div',
-                null,
+                { className: 'container' },
                 _react2.default.createElement(_Header2.default, null),
                 _react2.default.createElement(_ReRollButton2.default, { onClick: this.handleRollClick }),
                 isProcessing && _react2.default.createElement(
@@ -23493,17 +23493,37 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var RandomClass = function RandomClass(_ref) {
     var randomClass = _ref.randomClass;
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'h2',
-            null,
-            randomClass.character
-        ),
-        _react2.default.createElement(
-            'h2',
-            null,
-            randomClass.weapon
+            "div",
+            { className: "row" },
+            _react2.default.createElement(
+                "div",
+                { className: "col-xs-12 col-md-6" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "panel panel-default" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "panel-body" },
+                        randomClass.character
+                    )
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "col-xs-12 col-md-6" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "panel panel-default" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "panel-body" },
+                        randomClass.weapon
+                    )
+                )
+            )
         )
     );
 };
