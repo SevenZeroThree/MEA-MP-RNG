@@ -23239,13 +23239,13 @@ var App = function (_Component) {
                 'div',
                 { className: 'container' },
                 _react2.default.createElement(_Header2.default, null),
-                _react2.default.createElement(_ReRollButton2.default, { onClick: this.handleRollClick }),
                 isProcessing && _react2.default.createElement(
                     'h3',
                     null,
                     'Processing'
                 ),
                 randomClass && _react2.default.createElement(_RandomClass2.default, { randomClass: randomClass }),
+                _react2.default.createElement(_ReRollButton2.default, { onClick: this.handleRollClick }),
                 _react2.default.createElement(_Footer2.default, null)
             );
         }
@@ -23553,9 +23553,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var ReRollButton = function ReRollButton(_ref) {
     var onClick = _ref.onClick;
     return _react2.default.createElement(
-        'button',
-        { onClick: onClick },
-        'ReRoll'
+        "button",
+        { className: "btn btn-default", onClick: onClick },
+        "ReRoll"
     );
 };
 

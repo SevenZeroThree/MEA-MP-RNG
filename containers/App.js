@@ -35,7 +35,6 @@ class App extends Component {
             <div className="container">
                 <Header />
                 
-                <ReRollButton onClick={this.handleRollClick} />
                 { isProcessing &&
                     <h3>Processing</h3>
                 }
@@ -43,6 +42,8 @@ class App extends Component {
                 { randomClass &&
                     <RandomClass randomClass={randomClass} />
                 }
+                
+                <ReRollButton onClick={this.handleRollClick} />
 
                 <Footer />
             </div>
