@@ -23354,31 +23354,36 @@ var _react = __webpack_require__(20);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _SocialLinks = __webpack_require__(237);
+
+var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Footer = function Footer() {
     return _react2.default.createElement(
-        "footer",
+        'footer',
         null,
+        _react2.default.createElement(_SocialLinks2.default, null),
         _react2.default.createElement(
-            "ul",
+            'ul',
             null,
             _react2.default.createElement(
-                "li",
+                'li',
                 null,
                 _react2.default.createElement(
-                    "a",
-                    { href: "mailto:hankquinlanhub@gmail.com" },
-                    "email"
+                    'a',
+                    { href: 'mailto:hankquinlanhub@gmail.com' },
+                    'email'
                 )
             ),
             _react2.default.createElement(
-                "li",
+                'li',
                 null,
                 _react2.default.createElement(
-                    "a",
-                    { href: "https://github.com/hankquinlan" },
-                    "github.com/hankquinlan"
+                    'a',
+                    { href: 'https://github.com/sevenzerothree', target: '_blank' },
+                    'github.com/sevenzerothree'
                 )
             )
         )
@@ -25217,6 +25222,68 @@ var data = {
 };
 
 exports.default = data;
+
+/***/ }),
+/* 237 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(20);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Twitter = __webpack_require__(238);
+
+var _Twitter2 = _interopRequireDefault(_Twitter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SocialLinks = function SocialLinks() {
+    return _react2.default.createElement(
+        'div',
+        { className: 'social' },
+        _react2.default.createElement(_Twitter2.default, null)
+    );
+};
+
+exports.default = SocialLinks;
+
+/***/ }),
+/* 238 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(20);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Twitter = function Twitter() {
+    return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+            "a",
+            { href: "https://twitter.com/sevenzer0three", target: "_blank" },
+            "Twitter"
+        )
+    );
+};
+
+exports.default = Twitter;
 
 /***/ })
 /******/ ]);
