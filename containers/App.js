@@ -7,6 +7,7 @@ import { fetchRandomClass } from '../actions'
 import Header from '../components/Header';
 import RandomClass from '../components/RandomClass';
 import ReRollButton from '../components/ReRollButton';
+import Footer from '../components/Footer';
 
 class App extends Component {
 
@@ -33,6 +34,7 @@ class App extends Component {
         return (
             <div className="test">
                 <Header />
+                
                 <ReRollButton onClick={this.handleRollClick} />
                 { isProcessing &&
                     <h3>Processing</h3>
@@ -41,6 +43,8 @@ class App extends Component {
                 { randomClass &&
                     <RandomClass randomClass={randomClass} />
                 }
+
+                <Footer />
             </div>
         )
     }
