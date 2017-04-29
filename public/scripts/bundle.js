@@ -23189,6 +23189,10 @@ var _ReRollButton = __webpack_require__(200);
 
 var _ReRollButton2 = _interopRequireDefault(_ReRollButton);
 
+var _Footer = __webpack_require__(234);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23246,7 +23250,8 @@ var App = function (_Component) {
                     null,
                     'Generated Class'
                 ),
-                randomClass && _react2.default.createElement(_RandomClass2.default, { randomClass: randomClass })
+                randomClass && _react2.default.createElement(_RandomClass2.default, { randomClass: randomClass }),
+                _react2.default.createElement(_Footer2.default, null)
             );
         }
     }]);
@@ -25031,13 +25036,135 @@ var _react = __webpack_require__(25);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _NavMenu = __webpack_require__(235);
+
+var _NavMenu2 = _interopRequireDefault(_NavMenu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Header = function Header() {
-    return _react2.default.createElement('header', null);
+    return _react2.default.createElement(
+        'header',
+        null,
+        _react2.default.createElement(_NavMenu2.default, null)
+    );
 };
 
 exports.default = Header;
+
+/***/ }),
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(25);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer() {
+    return _react2.default.createElement(
+        "footer",
+        null,
+        _react2.default.createElement(
+            "ul",
+            null,
+            _react2.default.createElement(
+                "li",
+                null,
+                _react2.default.createElement(
+                    "a",
+                    { href: "mailto:hankquinlanhub@gmail.com" },
+                    "email"
+                )
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                _react2.default.createElement(
+                    "a",
+                    { href: "https://github.com/hankquinlan" },
+                    "github.com/hankquinlan"
+                )
+            )
+        )
+    );
+};
+
+exports.default = Footer;
+
+/***/ }),
+/* 235 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(25);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var NavMenu = function NavMenu() {
+    return _react2.default.createElement(
+        "nav",
+        null,
+        _react2.default.createElement(
+            "ul",
+            null,
+            _react2.default.createElement(
+                "li",
+                null,
+                _react2.default.createElement(
+                    "a",
+                    { href: "/" },
+                    "Home"
+                )
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                _react2.default.createElement(
+                    "a",
+                    { href: "/about" },
+                    "About"
+                )
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                _react2.default.createElement(
+                    "a",
+                    { href: "/cv" },
+                    "CV"
+                )
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                _react2.default.createElement(
+                    "a",
+                    { href: "/blog" },
+                    "Blog"
+                )
+            )
+        )
+    );
+};
+
+exports.default = NavMenu;
 
 /***/ })
 /******/ ]);
