@@ -39,7 +39,7 @@ class App extends Component {
                 { isProcessing &&
                     <h3>Processing</h3>
                 }
-                <h1>Generated Class</h1>
+                
                 { randomClass &&
                     <RandomClass randomClass={randomClass} />
                 }

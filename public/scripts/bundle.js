@@ -23245,11 +23245,6 @@ var App = function (_Component) {
                     null,
                     'Processing'
                 ),
-                _react2.default.createElement(
-                    'h1',
-                    null,
-                    'Generated Class'
-                ),
                 randomClass && _react2.default.createElement(_RandomClass2.default, { randomClass: randomClass }),
                 _react2.default.createElement(_Footer2.default, null)
             );
@@ -23494,6 +23489,11 @@ var RandomClass = function RandomClass(_ref) {
     return _react2.default.createElement(
         "div",
         null,
+        _react2.default.createElement(
+            "h1",
+            null,
+            "Generated Class"
+        ),
         _react2.default.createElement(
             "div",
             { className: "row" },

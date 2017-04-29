@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 
 const RandomClass = ({ randomClass }) => (
     <div>
+        <h1>Generated Class</h1>
         <div className="row">
             <div className="col-xs-12 col-md-6">
                 <div className="panel panel-default">
