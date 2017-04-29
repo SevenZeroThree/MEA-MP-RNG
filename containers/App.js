@@ -32,7 +32,7 @@ class App extends Component {
     render() {
         const { isProcessing, randomClass } = this.props
         return (
-            <div className="test">
+            <div>
                 <Header />
                 
                 <ReRollButton onClick={this.handleRollClick} />
