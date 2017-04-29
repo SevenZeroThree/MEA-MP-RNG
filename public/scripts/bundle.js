@@ -23177,6 +23177,10 @@ __webpack_require__(232);
 
 var _actions = __webpack_require__(185);
 
+var _Header = __webpack_require__(233);
+
+var _Header2 = _interopRequireDefault(_Header);
+
 var _RandomClass = __webpack_require__(199);
 
 var _RandomClass2 = _interopRequireDefault(_RandomClass);
@@ -23230,6 +23234,7 @@ var App = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'test' },
+                _react2.default.createElement(_Header2.default, null),
                 _react2.default.createElement(_ReRollButton2.default, { onClick: this.handleRollClick }),
                 isProcessing && _react2.default.createElement(
                     'h3',
@@ -23428,7 +23433,7 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
     _reactRedux.Provider,
     { store: store },
     _react2.default.createElement(_app2.default, null)
-), document.getElementById('container'));
+), document.getElementById('root'));
 
 /***/ }),
 /* 202 */
@@ -25010,6 +25015,29 @@ exports.default = randomClasses;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 233 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(25);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Header = function Header() {
+    return _react2.default.createElement('header', null);
+};
+
+exports.default = Header;
 
 /***/ })
 /******/ ]);
