@@ -23427,44 +23427,43 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var NavMenu = function NavMenu() {
     return _react2.default.createElement(
         "nav",
-        null,
+        { className: "navbar navbar-default" },
         _react2.default.createElement(
-            "ul",
-            null,
+            "div",
+            { className: "container-fluid" },
             _react2.default.createElement(
-                "li",
-                null,
+                "div",
+                { className: "collapse navbar-collapse" },
                 _react2.default.createElement(
-                    "a",
-                    { href: "/" },
-                    "Home"
-                )
-            ),
-            _react2.default.createElement(
-                "li",
-                null,
-                _react2.default.createElement(
-                    "a",
-                    { href: "/about" },
-                    "About"
-                )
-            ),
-            _react2.default.createElement(
-                "li",
-                null,
-                _react2.default.createElement(
-                    "a",
-                    { href: "/cv" },
-                    "CV"
-                )
-            ),
-            _react2.default.createElement(
-                "li",
-                null,
-                _react2.default.createElement(
-                    "a",
-                    { href: "/blog" },
-                    "Blog"
+                    "ul",
+                    { className: "nav navbar-nav" },
+                    _react2.default.createElement(
+                        "li",
+                        null,
+                        _react2.default.createElement(
+                            "a",
+                            { href: "/" },
+                            "ME:A"
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "li",
+                        null,
+                        _react2.default.createElement(
+                            "a",
+                            { href: "/about" },
+                            "About"
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "li",
+                        null,
+                        _react2.default.createElement(
+                            "a",
+                            { href: "/contact" },
+                            "Contact"
+                        )
+                    )
                 )
             )
         )
