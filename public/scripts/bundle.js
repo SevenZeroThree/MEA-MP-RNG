@@ -23620,10 +23620,6 @@ var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Twitter = __webpack_require__(206);
-
-var _Twitter2 = _interopRequireDefault(_Twitter);
-
 var _Github = __webpack_require__(200);
 
 var _Github2 = _interopRequireDefault(_Github);
@@ -23636,7 +23632,6 @@ var SocialLinks = function SocialLinks() {
     return _react2.default.createElement(
         'div',
         { className: 'social' },
-        _react2.default.createElement(_Twitter2.default, null),
         _react2.default.createElement(_Github2.default, null)
     );
 };
@@ -23644,29 +23639,7 @@ var SocialLinks = function SocialLinks() {
 exports.default = SocialLinks;
 
 /***/ }),
-/* 206 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(14);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Twitter = function Twitter() {
-    return _react2.default.createElement("a", { className: "twitter fa fa-twitter fa-3x", href: "https://twitter.com/sevenzer0three", target: "_blank" });
-};
-
-exports.default = Twitter;
-
-/***/ }),
+/* 206 */,
 /* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
