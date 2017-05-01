@@ -31,20 +31,21 @@ class App extends Component {
     render() {
         const { isProcessing, randomClass } = this.props
         return (
-            <div className="container">
+            <div>
                 <Header />
-                
-                { isProcessing &&
-                    <h3>Processing</h3>
-                }
-                
-                { randomClass &&
-                    <RandomClass randomClass={randomClass} />
-                }
-                
-                <ReRollButton onClick={this.handleRollClick} />
+                <div className="container">
+                    { isProcessing &&
+                        <h3>Processing</h3>
+                    }
+                    
+                    { randomClass &&
+                        <RandomClass randomClass={randomClass} />
+                    }
+                    
+                    <ReRollButton onClick={this.handleRollClick} />
 
-                <Footer />
+                    <Footer />
+                </div>
             </div>
         )
     }
