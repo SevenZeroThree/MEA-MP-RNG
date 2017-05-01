@@ -29,9 +29,11 @@ export function fetchRandomClass() {
         var numberOfWeapons = weapons.length >>> 0;
         var randomWeapon = weapons[Math.floor(Math.random() * numberOfWeapons)];
 
-        return dispatch(receiveRandomClass({
-            character: randomCharacter,
-            weapon: randomWeapon
-        }))
+        setTimeout(function() {
+            return dispatch(receiveRandomClass({
+                character: randomCharacter,
+                weapon: randomWeapon
+            }))
+        }, 1000);
     }
 }
