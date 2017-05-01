@@ -35,7 +35,12 @@ class App extends Component {
             <div>
                 <Header />
                 <div className="container">
-                    
+                    <p>
+                        Welcome to the random class generator for Mass Effect: Andromeda multiplayer!
+                    </p>
+                    <p>
+                        What setup will you get?
+                    </p>
                     { isProcessing &&
                         <Processing />
                     }

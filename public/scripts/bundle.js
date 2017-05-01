@@ -23264,6 +23264,16 @@ var App = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Welcome to the random class generator for Mass Effect: Andromeda multiplayer!'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'What setup will you get?'
+                    ),
                     isProcessing && _react2.default.createElement(_Processing2.default, null),
                     randomClass && _react2.default.createElement(_RandomClass2.default, { randomClass: randomClass }),
                     _react2.default.createElement(_ReRollButton2.default, { onClick: this.handleRollClick }),
