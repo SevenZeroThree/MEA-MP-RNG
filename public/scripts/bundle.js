@@ -23212,6 +23212,10 @@ var _Footer = __webpack_require__(199);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
+var _Processing = __webpack_require__(241);
+
+var _Processing2 = _interopRequireDefault(_Processing);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23260,11 +23264,7 @@ var App = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
-                    isProcessing && _react2.default.createElement(
-                        'h3',
-                        null,
-                        'Processing'
-                    ),
+                    isProcessing && _react2.default.createElement(_Processing2.default, null),
                     randomClass && _react2.default.createElement(_RandomClass2.default, { randomClass: randomClass }),
                     _react2.default.createElement(_ReRollButton2.default, { onClick: this.handleRollClick }),
                     _react2.default.createElement(_Footer2.default, null)
@@ -25299,6 +25299,42 @@ exports.default = randomClasses;
 
 /***/ }),
 /* 239 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 240 */,
+/* 241 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(14);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(242);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Processing = function Processing() {
+    return _react2.default.createElement(
+        'div',
+        { id: 'processing-container' },
+        _react2.default.createElement('i', { className: 'fa fa-spinner fa-pulse fa-3x fa-fw' })
+    );
+};
+
+exports.default = Processing;
+
+/***/ }),
+/* 242 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

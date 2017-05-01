@@ -1,0 +1,15 @@
+#processing-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e2e2e2;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    opacity: 0.5;
+    text-align: center;
+
+    > i {
+        margin-top: 25px;
+    }
+}

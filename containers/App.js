@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import RandomClass from '../components/RandomClass';
 import ReRollButton from '../components/ReRollButton';
 import Footer from '../components/Footer';
+import Processing from '../components/Processing';
 
 class App extends Component {
 
@@ -34,8 +35,9 @@ class App extends Component {
             <div>
                 <Header />
                 <div className="container">
+                    
                     { isProcessing &&
-                        <h3>Processing</h3>
+                        <Processing />
                     }
                     
                     { randomClass &&
