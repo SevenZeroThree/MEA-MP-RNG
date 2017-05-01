@@ -23522,7 +23522,7 @@ var RandomClass = function RandomClass(_ref) {
         _react2.default.createElement(
             "h1",
             null,
-            "Generated Class"
+            "Your Random Class Setup Is:"
         ),
         _react2.default.createElement(
             "div",
