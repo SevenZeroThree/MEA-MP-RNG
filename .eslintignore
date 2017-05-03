@@ -1,1 +1,3 @@
 webpack.config.js
+public/scripts/bundle.js
+public/scripts/vendor.js
