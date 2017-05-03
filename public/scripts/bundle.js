@@ -23623,7 +23623,7 @@ var ReRollButton = function ReRollButton(_ref) {
     var onClick = _ref.onClick;
     return _react2.default.createElement(
         "button",
-        { className: "btn btn-default", onClick: onClick },
+        { id: "re-roll-button", className: "btn btn-default", onClick: onClick },
         "ReRoll"
     );
 };
