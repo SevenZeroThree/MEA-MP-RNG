@@ -23200,11 +23200,11 @@ var _Header = __webpack_require__(201);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _RandomClass = __webpack_require__(203);
+var _RandomClass = __webpack_require__(204);
 
 var _RandomClass2 = _interopRequireDefault(_RandomClass);
 
-var _ReRollButton = __webpack_require__(204);
+var _ReRollButton = __webpack_require__(205);
 
 var _ReRollButton2 = _interopRequireDefault(_ReRollButton);
 
@@ -23212,7 +23212,7 @@ var _Footer = __webpack_require__(199);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _Processing = __webpack_require__(241);
+var _Processing = __webpack_require__(203);
 
 var _Processing2 = _interopRequireDefault(_Processing);
 
@@ -23370,7 +23370,7 @@ var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _SocialLinks = __webpack_require__(205);
+var _SocialLinks = __webpack_require__(206);
 
 var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
 
@@ -23495,7 +23495,7 @@ var NavMenu = function NavMenu() {
                         null,
                         _react2.default.createElement(
                             "a",
-                            { href: "/contact" },
+                            { href: "https://github.com/sevenzerothree/sevenzerothree.github.io/issues/new" },
                             "Contact"
                         )
                     )
@@ -23509,6 +23509,35 @@ exports.default = NavMenu;
 
 /***/ }),
 /* 203 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(14);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(239);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Processing = function Processing() {
+    return _react2.default.createElement(
+        'div',
+        { id: 'processing-container' },
+        _react2.default.createElement('i', { className: 'fa fa-spinner fa-pulse fa-3x fa-fw' })
+    );
+};
+
+exports.default = Processing;
+
+/***/ }),
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23574,7 +23603,7 @@ RandomClass.propTypes = {
 exports.default = RandomClass;
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23606,7 +23635,7 @@ ReRollButton.propTypes = {
 exports.default = ReRollButton;
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23624,7 +23653,7 @@ var _Github = __webpack_require__(200);
 
 var _Github2 = _interopRequireDefault(_Github);
 
-__webpack_require__(239);
+__webpack_require__(240);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23639,7 +23668,6 @@ var SocialLinks = function SocialLinks() {
 exports.default = SocialLinks;
 
 /***/ }),
-/* 206 */,
 /* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25287,37 +25315,7 @@ exports.default = randomClasses;
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 240 */,
-/* 241 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(14);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(242);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Processing = function Processing() {
-    return _react2.default.createElement(
-        'div',
-        { id: 'processing-container' },
-        _react2.default.createElement('i', { className: 'fa fa-spinner fa-pulse fa-3x fa-fw' })
-    );
-};
-
-exports.default = Processing;
-
-/***/ }),
-/* 242 */
+/* 240 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
