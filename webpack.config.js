@@ -5,7 +5,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
   entry: {
     bundle: './index.js',
-    vendor: ['react', 'react-dom']
+    vendor: ['react', 'react-dom', 'prop-types', 'redux', 'redux-thunk']
   },
   output: {
     filename: 'scripts/[name].js',
