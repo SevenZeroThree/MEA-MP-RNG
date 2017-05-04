@@ -63,7 +63,21 @@ var data = {
         'Talon',
         'Thokin',
         'Vanquisher',
-        'Venom'
+        'Venom',
+        'Black Widow',
+        'Dhan',
+        'Inferno',
+        'N7 Crusader',
+        'N7 Eagle',
+        'N7 Hurricane',
+        'N7 Piranha',
+        'N7 Valiant',
+        'N7 Valkyrie',
+        'Naladen',
+        'P.A.W.',
+        'Rozerad',
+        'Soned',
+        'Ushior'
     ]
 };
 
