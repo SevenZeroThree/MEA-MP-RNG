@@ -1,1 +1,23 @@
-.social a{margin-right:10px}.social .github{color:#000}.social .github:hover,.social .twitter:hover{text-decoration:none}footer{text-align:center}#processing-container{position:absolute;top:0;left:0;background:#e2e2e2;right:0;bottom:0;z-index:9999;opacity:.5;text-align:center}#processing-container>i{margin-top:25px}
+.social a {
+  margin-right: 10px; }
+
+.social .github {
+  color: black; }
+
+.social .twitter:hover,
+.social .github:hover {
+  text-decoration: none; }
+footer {
+  text-align: center; }
+#processing-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e2e2e2;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  opacity: 0.5;
+  text-align: center; }
+  #processing-container > i {
+    margin-top: 25px; }
