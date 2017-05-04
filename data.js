@@ -11,7 +11,13 @@ var data = {
         'Human Female Engineer',
         'Human Female Sentinel',
         'Human Female Adept',
-        'Human Female Infiltrator'
+        'Human Female Infiltrator',
+        'Turian Soldier',
+        'Krogan Vanguard',
+        'Krogan Engineer',
+        'Asari Sentinel',
+        'Salarian Infiltrator',
+        'Asari Adept'
     ],
     weapons: [
         'Viper',
