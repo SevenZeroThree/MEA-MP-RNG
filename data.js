@@ -17,7 +17,12 @@ var data = {
         'Krogan Engineer',
         'Asari Sentinel',
         'Salarian Infiltrator',
-        'Asari Adept'
+        'Asari Adept',
+        'Krogan Mercenary',
+        'Turian Havoc Trooper',
+        'Asari Huntress',
+        'Angara Insurgent',
+        'Salarian Architect'
     ],
     weapons: [
         'Viper',
