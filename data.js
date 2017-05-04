@@ -44,7 +44,26 @@ var data = {
         'Raptor',
         'Ruzad',
         'Widow',
-        'Zalkin'
+        'Zalkin',
+        'Equalizer',
+        'Hesh',
+        'Isharay',
+        'L-89 Halberd',
+        'Lanat',
+        'M-25 Hornet',
+        'M-37 Falcon',
+        'M-90 Indra',
+        'Revenant',
+        'Sandstorm',
+        'Scattershot',
+        'Scorpion',
+        'Shadow',
+        'Sidewinder',
+        'Sweeper',
+        'Talon',
+        'Thokin',
+        'Vanquisher',
+        'Venom'
     ]
 };
 
