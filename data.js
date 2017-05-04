@@ -22,7 +22,12 @@ var data = {
         'Turian Havoc Trooper',
         'Asari Huntress',
         'Angara Insurgent',
-        'Salarian Architect'
+        'Salarian Architect',
+        'Asari Duelist',
+        'Angara Avenger',
+        'Salarian Operator',
+        'Human Kineticist',
+        'Krogan Gladiator'
     ],
     weapons: [
         'Viper',
