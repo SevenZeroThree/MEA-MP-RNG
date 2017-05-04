@@ -28,9 +28,12 @@ export function fetchRandomClass() {
 
         var numberOfWeapons = weapons.length >>> 0;
         var randomWeapon = weapons[Math.floor(Math.random() * numberOfWeapons)];
-
-        dataLayer.push({'generated-character': randomCharacter});
-        dataLayer.push({'generated-weapon': randomWeapon});
+        
+        // eslint-disable-next-line no-undef
+        dataLayer.push({
+            'generated-character': randomCharacter,
+            'generated-weapon': randomWeapon
+        });
 
         setTimeout(function() {
             return dispatch(receiveRandomClass({
