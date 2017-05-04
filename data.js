@@ -34,7 +34,17 @@ var data = {
         'Avenger',
         'Charger',
         'Predator',
-        'Katana'
+        'Katana',
+        'Carnifex',
+        'Cyclone',
+        'Disciple',
+        'Incisor',
+        'M-5 Phalanx',
+        'M-96 Mattock',
+        'Raptor',
+        'Ruzad',
+        'Widow',
+        'Zalkin'
     ]
 };
 
