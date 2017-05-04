@@ -24224,16 +24224,7 @@ var NavMenu = function NavMenu() {
                         _react2.default.createElement(
                             "a",
                             { href: "/" },
-                            "ME:A"
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "li",
-                        null,
-                        _react2.default.createElement(
-                            "a",
-                            { href: "/about" },
-                            "About"
+                            "ME:A Random Class Generator"
                         )
                     ),
                     _react2.default.createElement(
